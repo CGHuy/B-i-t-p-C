@@ -25,11 +25,9 @@ int binary(int n) {
 
 main() {
 	int n,m;
-	printf ("Nhap so thap phan: ");
-	scanf ("%d",&n);
+	printf ("Nhap so thap phan: "); scanf ("%d",&n);
 	printf ("So nhi phan la: %lld\n",decimal(n));
-	printf ("\nNhap so nhi phan: ");
-	scanf ("%d",&m);
+	printf ("\nNhap so nhi phan: "); scanf ("%d",&m);
 	printf ("So thap phan la: %d",binary(m));
 	getch();
 }
