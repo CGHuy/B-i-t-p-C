@@ -185,7 +185,7 @@ int main (){
 			invien(a,n,m);
 			break;
 		default:
-			printf ("Khong ton tai");
+			printf ("Yeu cau khong ton tai");
 			break;
 	}
 	getch();
