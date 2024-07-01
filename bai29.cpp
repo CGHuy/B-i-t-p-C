@@ -2,7 +2,7 @@
 #include <conio.h>
 #include <math.h>
 
-void input(int a[][100], int n, int m) {
+void nhap(int a[][100], int n, int m) {
 	printf ("\nNHAP GIA TRI CUA MA TRAN\n");
 	for (int i=0;i<n;i++) {
 		for (int j=0;j<m;j++) {
@@ -12,7 +12,7 @@ void input(int a[][100], int n, int m) {
 	}
 }
 
-void output(int a[][100], int n, int m) {
+void xuat(int a[][100], int n, int m) {
 	for (int i=0; i<n; i++) {
 		for (int j=0; j<m ;j++) {
 			printf ("%d\t", a[i][j]);
@@ -33,7 +33,7 @@ void sxtang(int a[][100], int n, int m) {
 		}
 	}
 	printf ("\nMa tran tang dan la\n");
-	output(a,n,m);
+	xuat(a,n,m);
 }
 
 void sxgiam(int a[][100], int n, int m) {
@@ -48,7 +48,7 @@ void sxgiam(int a[][100], int n, int m) {
 		}
 	}
 	printf ("\nMa tran giam dan la\n");
-	output(a,n,m);
+	xuat(a,n,m);
 }
 
 void TangTheoDong(int a[][100], int n, int m) {
@@ -64,7 +64,7 @@ void TangTheoDong(int a[][100], int n, int m) {
 		}
 	}
 	printf ("\nMa tran tang theo dong la\n");
-	output(a,n,m);
+	xuat(a,n,m);
 }
 
 void GiamTheoDong(int a[][100], int n, int m) {
@@ -80,7 +80,7 @@ void GiamTheoDong(int a[][100], int n, int m) {
 		}
 	}
 	printf ("\nMa tran giam theo dong la\n");
-	output(a,n,m);
+	xuat(a,n,m);
 }
 
 void TangTheoCot(int a[][100], int n, int m) {
@@ -96,7 +96,7 @@ void TangTheoCot(int a[][100], int n, int m) {
 		}
 	}
 	printf ("\nMa tran tang theo cot la\n");
-	output(a,n,m);
+	xuat(a,n,m);
 }
 
 void GiamTheoCot(int a[][100], int n, int m) {
@@ -112,7 +112,7 @@ void GiamTheoCot(int a[][100], int n, int m) {
 		}
 	}
 	printf ("\nMa tran giam theo cot la\n");
-	output(a,n,m);
+	xuat(a,n,m);
 }
 
 void MinMax(int a[][100], int n, int m) {
@@ -144,14 +144,14 @@ void invien(int a[][100], int n, int m) {
 int main (){
 	int a[100][100];
 	int n,m;
+	int chon;
 	do {
 	printf ("Nhap so dong: "); scanf ("%d",&n);
 	printf ("Nhap so cot: "); scanf ("%d",&m);
 	} while (n <= 0 || m <= 0);
-	input(a,n,m);
+	nhap(a,n,m);
 	printf ("\nMA TRAN DA NHAP LA\n");
-	output(a,n,m);
-	int chon;
+	xuat(a,n,m);
 	printf ("\nMENU\n");
 	printf ("1. Sap xep ma tran theo chieu tang, giam\n");
 	printf ("2. Sap xep ma tran tang dan theo dong\n");
