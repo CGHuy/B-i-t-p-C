@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <conio.h>
-#include <math.h>
 #include <string.h>
 
 main () {
@@ -24,6 +23,8 @@ main () {
 		case '/' :
 			printf ("Thuong la: %.1f",float(a/b));
 			break;
+		default:
+			printf ("Phep tinh khong ton tai!");
 	}
 	getch();
 }
