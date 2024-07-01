@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <conio.h>
-#include <math.h>
 
 main () {
 	for (int i=100; i<1000; i++) {
