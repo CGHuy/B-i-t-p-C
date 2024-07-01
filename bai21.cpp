@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <conio.h>
-#include <math.h>
 
 long long factorial(int n) {
 	if (n == 1) {
