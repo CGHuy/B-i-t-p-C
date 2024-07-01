@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <conio.h>
-#include <math.h>
 
 void nhap(int a[][100], int n) {
 	for (int i=0; i<n; i++) {
