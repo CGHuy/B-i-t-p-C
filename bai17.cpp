@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <conio.h>
-#include <math.h>
 
 main () {
 	int count = 1;
