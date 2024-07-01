@@ -15,7 +15,7 @@ main () {
 				printf ("Phuong trinh vo nhiem");
 			}
 		} else {
-			printf ("Phuong trinh co 1 nhiem duy nhat %.2f",-b/2a);
+			printf ("Phuong trinh co 1 nhiem duy nhat %.2f",-b/2*a);
 		}
 	} else {
 		delta = pow(b,2) - 4*a*c;
