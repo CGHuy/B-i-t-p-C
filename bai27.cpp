@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <conio.h>
-#include <math.h>
 
 long long ucln(long long a, long long b) {
 	if (b==0) 
