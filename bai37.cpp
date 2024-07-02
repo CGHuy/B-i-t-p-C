@@ -19,7 +19,7 @@ sach nhap() {
 }
 
 void xuat(sach a) {
-	printf ("%-5s%-20s%-20s%4d\n",a.masach,a.tensach,a.tacgia,a.namxb);
+	printf ("%-5s%-25s%-25s%4d\n",a.masach,a.tensach,a.tacgia,a.namxb);
 }
 
 int main() {
@@ -30,16 +30,17 @@ int main() {
 		a[i] = nhap();
 	}
 	
-	printf ("\nNhung quyen sach co ten tin hoc dai cuong\n");
+	printf ("\nNhung quyen sach co ten ngan hon tin hoc dai cuong\n");
+	char chuoi[] = "tin hoc dai cuong";
 	for (int i=0; i<n; i++) {
-		if (strstr("tin hoc dai cuong",a[i].tensach)) {
+		if (strlen(a[i].tensach) < strlen(chuoi)) {
 			xuat(a[i]);
 		}
 	}
 	
 	printf ("\nDanh sach cac quyen sach theo thu tu\n");
 	for (int i=0; i<n-1; i++) {
-		for (int j=0; j<n; j++) {
+		for (int j=i; j<n; j++) {
 			if (strcmp(a[i].tensach,a[j].tensach) > 0) {
 				sach temp = a[i];
 				a[i] = a[j];
