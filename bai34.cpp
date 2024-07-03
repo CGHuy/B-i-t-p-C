@@ -12,7 +12,7 @@ int main() {
 			check = xau[i];
 			int count = 0;
 			int duyet = i;
-			while (xau[duyet] == check) {
+			while (check == xau[duyet]) {
 				count++;
 				duyet++;
 			}
