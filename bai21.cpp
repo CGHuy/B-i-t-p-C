@@ -9,7 +9,7 @@ long long factorial(int n) {
 	}
 }
 
-main() {
+int main() {
 	int n;
 	printf ("Nhap n: "); scanf ("%d",&n);
 	printf ("Giai thua cua n la: %lld",factorial(n));
